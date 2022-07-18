@@ -8,6 +8,8 @@ def merge_lists(lst1, lst2):
     total_counter = 0
     merged_list = []
 
+    # While both lists haven't been fully traversed,
+    # add the smaller value each iteration.
     while list1_pointer < len(lst1) and list2_pointer < len(lst2):
         if lst1[list1_pointer] < lst2[list2_pointer]:
             merged_list.append(lst1[list1_pointer])
@@ -20,6 +22,7 @@ def merge_lists(lst1, lst2):
             total_counter += 1
             print(merged_list)
 
+    # When one list has been traversed, just copy the rest of other list.
     while list1_pointer < len(lst1):
         merged_list.append(lst1[list1_pointer])
         list1_pointer += 1
@@ -31,6 +34,8 @@ def merge_lists(lst1, lst2):
     
 
     return merged_list
+    # This algorithm is O(n + m) because it goes through the length of 
+    # the sum of both lists.
 
 
 #show me the money
