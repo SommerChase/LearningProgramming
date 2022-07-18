@@ -5,16 +5,30 @@ def merge_lists(lst1, lst2):
 
     list1_pointer = 0
     list2_pointer = 0
+    total_counter = 0
     merged_list = []
 
-    #left off here - it worked for the first 4 indicies.
-    for i in range(len(list1) + len(list2) - 1):
-        if list1[list1_pointer] < list2[list2_pointer]:
-            merged_list.append(list1[list1_pointer])
+    while list1_pointer < len(lst1) and list2_pointer < len(lst2):
+        if lst1[list1_pointer] < lst2[list2_pointer]:
+            merged_list.append(lst1[list1_pointer])
             list1_pointer += 1
+            total_counter += 1
+            print(merged_list)
         else:
-            merged_list.append(list2[list2_pointer])
+            merged_list.append(lst2[list2_pointer])
             list2_pointer += 1
+            total_counter += 1
+            print(merged_list)
+
+    while list1_pointer < len(lst1):
+        merged_list.append(lst1[list1_pointer])
+        list1_pointer += 1
+        print(merged_list)
+    while list2_pointer < len(lst2):
+        merged_list.append(lst2[list2_pointer])
+        list2_pointer += 1
+        print(merged_list)
+    
 
     return merged_list
 
