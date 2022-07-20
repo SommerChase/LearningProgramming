@@ -37,6 +37,7 @@
         "map": "cpp",
         "string": "cpp",
         "tuple": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "stat.h": "c"
     }
 }
