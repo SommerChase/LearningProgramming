@@ -1,6 +1,5 @@
 -- Chase Sommer 
 -- Sr. Marketing Analyst
--- 2022-08-03
 -- robertchasesommer@gmail.com
 
 -- Question 1: Which Month & Category had the highest sales $?

@@ -1,6 +1,5 @@
 -- Chase Sommer 
 -- Sr. Marketing Analyst
--- 2022-08-03
 -- robertchasesommer@gmail.com
 
 -- Question 4:  Which Month & Zip Code had the highest sales dollars per capita growth % MoM for Bourbon?
